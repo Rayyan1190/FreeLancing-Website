@@ -1,12 +1,13 @@
 import React from "react";
 import "./LandingPage.css";
-
+import dummyImage from "./dummy.avif";
 export default function LandingPage() {
   return (
     <div className="landing-page">
       {/* Navbar */}
       <header className="navbar">
         <div className="logo-container">
+          <div className="logo-line"></div>
           <div className="logo-line"></div>
           <h1 className="logo-text">SkillBridge</h1>
         </div>
@@ -48,32 +49,53 @@ export default function LandingPage() {
               Start Learning
             </button>
           </div>
-          <section className="why-skill-bridge">
-      <div className="stats">
-        <div className="stat-box">
-          <img src="/icons/globe-icon.svg" alt="States" />
-          <div>
-            <h3>5+</h3>
-            <p>States Served</p>
+       
+          <div className="stats_bar_container">
+      <div className="stats_bar_wrapper">
+        <div className="stats_item">
+          <div className="stats_icon stats_icon_states">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" stroke="#DCEEC9" strokeWidth="2" />
+              <path d="M14.5 16.5C16.5 13.5 18 15 20 17C22 19 24 21.5 26.5 18.5" stroke="#B6ED61" strokeWidth="2" strokeLinecap="round" />
+              <path d="M17 21C18 22.5 19.5 24 21 22.5" stroke="#B6ED61" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          </div>
+          <div className="stats_content">
+            <h3 className="stats_number">5+</h3>
+            <p className="stats_label">States Served</p>
           </div>
         </div>
-        <div className="stat-box">
-          <img src="/icons/file-icon.svg" alt="Clients" />
-          <div>
-            <h3>250+</h3>
-            <p>Clients Served</p>
+
+        <div className="stats_item">
+          <div className="stats_icon stats_icon_clients">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7" y="10" width="26" height="20" rx="2" stroke="#E5EEFF" strokeWidth="2" />
+              <rect x="7" y="16" width="26" height="2" fill="#33BFFF" />
+              <rect x="7" y="22" width="18" height="2" fill="#CAFF33" />
+            </svg>
+          </div>
+          <div className="stats_content">
+            <h3 className="stats_number">250+</h3>
+            <p className="stats_label">Clients Served</p>
           </div>
         </div>
-        <div className="stat-box">
-          <img src="/icons/file-icon.svg" alt="Orders" />
-          <div>
-            <h3>350+</h3>
-            <p>Orders Served</p>
+
+        <div className="stats_item">
+          <div className="stats_icon stats_icon_orders">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7" y="10" width="26" height="20" rx="2" stroke="#E5EEFF" strokeWidth="2" />
+              <rect x="7" y="16" width="26" height="2" fill="#33BFFF" />
+              <rect x="7" y="22" width="26" height="2" fill="#CAFF33" />
+            </svg>
+          </div>
+          <div className="stats_content">
+            <h3 className="stats_number">350+</h3>
+            <p className="stats_label">Orders Served</p>
           </div>
         </div>
       </div>
-      
-    </section>
+    </div>
+  
         </div>
 
         {/* Image Stack */}
@@ -81,20 +103,20 @@ export default function LandingPage() {
           {/* Background rotated cards */}
           <div className="rotated-card card-1">
             <img
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf"
+              src={dummyImage}
               alt="office 2"
             />
           </div>
           <div className="rotated-card card-2">
             <img
-              src="https://images.unsplash.com/photo-1581093588401-58c3d1f53c6e"
+              src={dummyImage}
               alt="office 1"
             />
           </div>
           {/* Main image */}
           <div className="main-image">
             <img
-              src="https://images.unsplash.com/photo-1556742031-c6961e8560b0"
+              src={dummyImage}
               alt="main meeting"
             />
           </div>
@@ -105,7 +127,7 @@ export default function LandingPage() {
       </main>
       <div className="skill-bridge-container">
       <div className="skill-bridge-header">
-        <h1>Why Skill Bridge</h1>
+        <h1 >Why Skill Bridge</h1>
         <p>A smarter way to work, build, and grow.</p>
       </div>
       
@@ -187,7 +209,7 @@ export default function LandingPage() {
           <div className="course-meta">
             <div className="course-verified">
               <span className="verified-icon">✓</span>
-              <span>Verified</span>
+              <span className="verified">Verified</span>
             </div>
             <div className="course-rating">
               <span className="star-icon">★</span>
@@ -216,7 +238,7 @@ export default function LandingPage() {
           <div className="course-meta">
             <div className="course-verified">
               <span className="verified-icon">✓</span>
-              <span>Verified</span>
+              <span className="verified" >Verified</span>
             </div>
             <div className="course-rating">
               <span className="star-icon">★</span>
@@ -245,7 +267,7 @@ export default function LandingPage() {
           <div className="course-meta">
             <div className="course-verified">
               <span className="verified-icon">✓</span>
-              <span>Verified</span>
+              <span className="verified">Verified</span>
             </div>
             <div className="course-rating">
               <span className="star-icon">★</span>
